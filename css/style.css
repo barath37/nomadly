@@ -569,3 +569,66 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================
+   EXPLORE PAGE SPECIFIC STYLES
+   ========================================= */
+
+.explore-section {
+    padding: 60px 8% 100px;
+}
+
+.explore-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.explore-header h1 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+/* Centered variation of the title divider */
+.title-divider.center {
+    justify-content: center;
+}
+
+.title-divider.center span {
+    width: 40px; /* Slightly shorter for the centered version */
+}
+
+/* --- Filter Menu --- */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    background-color: #f1f5f9; /* Soft background */
+    color: var(--text-light);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px; /* Pill shape */
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #e2e8f0;
+    color: var(--dark-blue);
+}
+
+.filter-btn.active {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(11, 43, 94, 0.2);
+}
+
+/* Note: The destinations grid styles are already handled by 
+   the .destinations-grid classes written in the Home Page CSS! */
