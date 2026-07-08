@@ -632,3 +632,171 @@ footer {
 
 /* Note: The destinations grid styles are already handled by 
    the .destinations-grid classes written in the Home Page CSS! */
+
+/* =========================================
+   CONTACT PAGE SPECIFIC STYLES
+   ========================================= */
+
+.contact-section {
+    padding: 60px 8% 100px;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Left Side: Contact Info --- */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h1 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    margin: 25px 0 40px;
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.detail-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #f0f4f8; /* Soft background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+.detail-text h4 {
+    font-size: 16px;
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+}
+
+.detail-text p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.contact-socials h4 {
+    font-size: 16px;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+/* Modifier for social links on a light background */
+.social-links.dark a {
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.social-links.dark a:hover {
+    background-color: var(--accent-terracotta);
+}
+
+/* --- Right Side: Contact Form --- */
+.contact-form-container {
+    flex: 1;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: var(--white);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--dark-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: var(--accent-terracotta);
+}
+
+/* --- Responsive Design for Contact Page --- */
+@media (max-width: 900px) {
+    .contact-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-form-container {
+        padding: 30px;
+    }
+}
