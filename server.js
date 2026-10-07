@@ -25,3 +25,9 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// New route added in feature branch
+app.get('/api/buddies', async (req, res) => {
+    const buddies = await Buddy.find();
+    res.json(buddies);
+});
